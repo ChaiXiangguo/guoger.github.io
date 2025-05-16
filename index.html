@@ -1,1 +1,212 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><meta name=renderer content=webkit><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><link rel=icon href=favicon.ico><title>Vue Element Admin</title><link href=static/css/app.a13d828f.css rel=preload as=style><link href=static/css/chunk-libs.3dfb7769.css rel=preload as=style><link href=static/js/app.9a81704f.js rel=preload as=script><link href=static/js/chunk-elementUI.d523ea8c.js rel=preload as=script><link href=static/js/chunk-libs.de6523d6.js rel=preload as=script><link href=static/css/chunk-libs.3dfb7769.css rel=stylesheet><link href=static/css/app.a13d828f.css rel=stylesheet></head><body><div id=app></div><script>(function(e){function t(t){for(var n,o,c=t[0],i=t[1],l=t[2],s=0,f=[];s<c.length;s++)o=c[s],Object.prototype.hasOwnProperty.call(u,o)&&u[o]&&f.push(u[o][0]),u[o]=0;for(n in i)Object.prototype.hasOwnProperty.call(i,n)&&(e[n]=i[n]);d&&d(t);while(f.length)f.shift()();return a.push.apply(a,l||[]),r()}function r(){for(var e,t=0;t<a.length;t++){for(var r=a[t],n=!0,o=1;o<r.length;o++){var c=r[o];0!==u[c]&&(n=!1)}n&&(a.splice(t--,1),e=i(i.s=r[0]))}return e}var n={},o={runtime:0},u={runtime:0},a=[];function c(e){return i.p+"static/js/"+({}[e]||e)+"."+{"chunk-032c4989":"8207b21b","chunk-9cd0853c":"5d2a2c8c"}[e]+".js"}function i(t){if(n[t])return n[t].exports;var r=n[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,i),r.l=!0,r.exports}i.e=function(e){var t=[],r={"chunk-9cd0853c":1};o[e]?t.push(o[e]):0!==o[e]&&r[e]&&t.push(o[e]=new Promise((function(t,r){for(var n="static/css/"+({}[e]||e)+"."+{"chunk-032c4989":"31d6cfe0","chunk-9cd0853c":"fdd38930"}[e]+".css",u=i.p+n,a=document.getElementsByTagName("link"),c=0;c<a.length;c++){var l=a[c],s=l.getAttribute("data-href")||l.getAttribute("href");if("stylesheet"===l.rel&&(s===n||s===u))return t()}var f=document.getElementsByTagName("style");for(c=0;c<f.length;c++){l=f[c],s=l.getAttribute("data-href");if(s===n||s===u)return t()}var d=document.createElement("link");d.rel="stylesheet",d.type="text/css",d.onload=t,d.onerror=function(t){var n=t&&t.target&&t.target.src||u,a=new Error("Loading CSS chunk "+e+" failed.\n("+n+")");a.code="CSS_CHUNK_LOAD_FAILED",a.request=n,delete o[e],d.parentNode.removeChild(d),r(a)},d.href=u;var p=document.getElementsByTagName("head")[0];p.appendChild(d)})).then((function(){o[e]=0})));var n=u[e];if(0!==n)if(n)t.push(n[2]);else{var a=new Promise((function(t,r){n=u[e]=[t,r]}));t.push(n[2]=a);var l,s=document.createElement("script");s.charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.src=c(e);var f=new Error;l=function(t){s.onerror=s.onload=null,clearTimeout(d);var r=u[e];if(0!==r){if(r){var n=t&&("load"===t.type?"missing":t.type),o=t&&t.target&&t.target.src;f.message="Loading chunk "+e+" failed.\n("+n+": "+o+")",f.name="ChunkLoadError",f.type=n,f.request=o,r[1](f)}u[e]=void 0}};var d=setTimeout((function(){l({type:"timeout",target:s})}),12e4);s.onerror=s.onload=l,document.head.appendChild(s)}return Promise.all(t)},i.m=e,i.c=n,i.d=function(e,t,r){i.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},i.r=function(e){"undefined"!==typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(e,t){if(1&t&&(e=i(e)),8&t)return e;if(4&t&&"object"===typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(i.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var n in e)i.d(r,n,function(t){return e[t]}.bind(null,n));return r},i.n=function(e){var t=e&&e.__esModule?function(){return e["default"]}:function(){return e};return i.d(t,"a",t),t},i.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},i.p="",i.oe=function(e){throw console.error(e),e};var l=window["webpackJsonp"]=window["webpackJsonp"]||[],s=l.push.bind(l);l.push=t,l=l.slice();for(var f=0;f<l.length;f++)t(l[f]);var d=s;r()})([]);</script><script src=static/js/chunk-elementUI.d523ea8c.js></script><script src=static/js/chunk-libs.de6523d6.js></script><script src=static/js/app.9a81704f.js></script></body></html>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>羽毛球赛事官网 - 首页</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="company-name">玩运动.中国</div>
+        <nav class="corporate-switch-fragment">
+            <ul>
+                <li class="active-home">
+                  <a href="index.html">首页</a>
+                </li>
+                <li>
+                  <a href="#about">关于我们</a>
+                </li>
+            </ul>
+           
+        </nav>
+        <a class="menu-icon-bars" href="#qr">
+            <img src="img/qr.svg" alt="">
+            二维码
+        </a>
+    </header>
+
+    <!-- 轮播图 -->
+    <section class="slider">
+        <img src="img/background1.jpeg" alt="羽毛球赛事2">
+        <img src="https://img0.baidu.com/it/u=4063106413,379897210&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500" alt="羽毛球赛事1">
+        <img src="img/background1.webp" alt="羽毛球赛事3">
+        <div class="welcome-content">
+            <p class="welcome-text-first-line">欢迎来到</p>
+            <p class="welcome-text-second-line">玩运动.中国</p>
+            <p class="welcome-text-third-line">关注最新赛事，发现最新江湖榜，探索球员故事，并加入我们以羽毛球为生的社区</p>
+             <div class="login-register">
+              <a class="button-border" href="#">登录</a>
+              <a class="account-link" href="#">注册</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页面内容 -->
+    <section id="about" class="content">
+        <h2>欢迎来到羽毛球赛事官网</h2>
+        <p>我们致力于为广大羽毛球爱好者提供最专业、最精彩的赛事体验。无论你是专业选手还是业余爱好者，都能在这里找到属于自己的舞台。</p>
+        <h3>赛事亮点</h3>
+        <ul>
+            <li>高水平的参赛选手</li>
+            <li>丰富的赛事奖励</li>
+            <li>专业的赛事组织</li>
+            <li>精彩的现场直播</li>
+        </ul>
+        <h3>近期赛事</h3>
+        <p>即将举办的赛事包括：[赛事名称1]、[赛事名称2]等。敬请关注我们的官网，获取最新赛事信息。</p>
+    </section>
+
+    <!-- 二维码区域 -->
+    <section id="qr" class="qr-code-section">
+        <div class="qr-code-item">
+            <img src="img/mp.png" alt="小程序二维码">
+            <p>扫描二维码，进入小程序</p>
+        </div>
+        <div class="qr-code-item">
+            <img src="img/mp.png" alt="公众号二维码">
+            <p>扫描二维码，关注公众号</p>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2025 羽毛球赛事官网 版权所有</p>
+    </footer>
+    <canvas id="reveal-effect"></canvas>
+    <script src="js/script.js"></script>
+    <script>
+      let renderer, scene, camera, cameraCtrl;
+  let width, height, cx, cy, wWidth, wHeight;
+  const TMath = THREE.Math;
+  
+  let conf = {
+    color: 0xffffff,
+    objectWidth: 12,
+    objectThickness: 3,
+    ambientColor: 0x808080,
+    light1Color: 0xffffff,
+    shadow: false,
+    perspective: 75,
+    cameraZ: 75,
+  };
+  
+  let objects = [];
+  let geometry, material;
+  let hMap, hMap0, nx, ny;
+  
+  init();
+  
+  function init() {
+    renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('reveal-effect'), antialias: true, alpha: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+  
+    camera = new THREE.PerspectiveCamera(conf.perspective, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera.position.z = conf.cameraZ;
+  
+    scene = new THREE.Scene();
+    geometry = new THREE.BoxGeometry(conf.objectWidth, conf.objectWidth, conf.objectThickness);
+  
+    window.addEventListener('load', initScene);
+    // document.getElementById('trigger').addEventListener('click', initScene);
+  
+    animate();
+  };
+  
+  function initScene() {
+    onResize();
+    scene = new THREE.Scene();
+    initLights();
+    initObjects();
+  }
+  
+  function initLights() {
+    scene.add(new THREE.AmbientLight(conf.ambientColor));
+    let light = new THREE.PointLight(0xffffff);
+    light.position.z = 100;
+    scene.add(light);
+  }
+  
+  function initObjects() {
+    objects = [];
+    nx = Math.round(wWidth / conf.objectWidth) + 1;
+    ny = Math.round(wHeight / conf.objectWidth) + 1;
+    let mesh, x, y;
+    for (let i = 0; i < nx; i++) {
+      for (let j = 0; j < ny; j++) {
+        material = new THREE.MeshLambertMaterial({ color: conf.color, transparent: true, opacity: 1 });
+        mesh = new THREE.Mesh(geometry, material);
+        x = -wWidth / 2 + i * conf.objectWidth;
+        y = -wHeight / 2 + j * conf.objectWidth;
+        mesh.position.set(x, y, 0);
+        objects.push(mesh);
+        scene.add(mesh);
+      }
+    }
+    document.body.classList.add('loaded');
+    startAnim();
+  }
+  
+  function startAnim() {
+    document.body.classList.remove('revealed');
+    objects.forEach(mesh => {
+      mesh.rotation.set(0, 0, 0);
+      mesh.material.opacity = 1;
+      mesh.position.z = 0;
+      let delay = TMath.randFloat(1, 2);
+      let rx = TMath.randFloatSpread(2 * Math.PI);
+      let ry = TMath.randFloatSpread(2 * Math.PI);
+      let rz = TMath.randFloatSpread(2 * Math.PI);
+      TweenMax.to(mesh.rotation, 2, { x: rx, y: ry, z: rz, delay: delay });
+      TweenMax.to(mesh.position, 2, { z: 80, delay: delay + 0.5, ease: Power1.easeOut });
+      TweenMax.to(mesh.material, 2, { opacity: 0, delay: delay + 0.5 });
+    });
+    setTimeout(() => {
+      document.body.classList.add('revealed');
+    }, 4500);
+  }
+  
+  function animate() {
+    requestAnimationFrame(animate);
+    renderer.render(scene, camera);
+  };
+  
+  function onResize() {
+    width = window.innerWidth; cx = width / 2;
+    height = window.innerHeight; cy = height / 2;
+    camera.aspect = width / height;
+    camera.updateProjectionMatrix();
+    renderer.setSize(width, height);
+  
+    size = getRendererSize();
+    wWidth = size[0];
+    wHeight = size[1];
+  }
+  
+  function getRendererSize() {
+    const cam = new THREE.PerspectiveCamera(conf.perspective, camera.aspect);
+    const vFOV = cam.fov * Math.PI / 180;
+    const height = 2 * Math.tan(vFOV / 2) * Math.abs(conf.cameraZ);
+    const width = height * cam.aspect;
+    return [width, height];
+  }
+  
+    </script>
+    <script>
+        // 监听滚动事件
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.content, .qr-code-section');
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                    section.classList.add('visible');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

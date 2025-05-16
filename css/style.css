@@ -1,0 +1,252 @@
+/* 全局样式 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+/* 导航栏样式 */
+header {
+    padding: 10px 30px;
+    position: relative;
+    z-index: 1;
+    left:0%;
+    top: 10px;
+    right:0%;
+    color:#FFF;
+    position: absolute; /* 固定导航栏 */
+    display: flex;
+    justify-content:space-between
+    /* width: 90%; */
+}
+header .menu-icon-bars{
+    background-color: rgb(248, 249, 250);
+    color:#333;
+    font-weight: 600;
+    height: 50px;
+    width: 80px;
+    padding:0 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+header .menu-icon-bars img{
+  height: 20px;
+}
+
+.company-name {
+    /* top: 20px; */
+    left: 5%;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+nav {
+    width: 300px;
+    align-items: center;
+    background-color: #FFF;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 47px;
+}
+
+nav ul li {
+    /* margin-right: 20px; */
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    line-height: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+nav ul .active-home{
+    background-color: rgb(22, 72, 178);
+    border-radius: 10px;
+}
+nav ul .active-home a{
+    color:#FFF;
+}
+
+.login-register {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.login-register .account-link{
+    background-color: rgb(22, 72, 178);
+    font-weight: 600;
+    text-decoration: none;
+    color:#FFF
+}
+.login-register .button-border{
+    color: #333;
+    text-align: center;
+    background-color: #fff;
+    text-decoration: none;
+}
+.login-register a {
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 10px;
+    display: inline-block;
+    line-height: 50px;
+    width: 240px;
+}
+
+
+/* 轮播图样式 */
+.slider {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    /* margin-top: 60px;  */
+    /* 留出导航栏空间 */
+}
+.welcome-content{
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    z-index: 10;
+    color:#FFF;
+    text-align: center;
+    margin-top: -100px; /* 高度的一半的负值 */
+    margin-left: -400px; /* 宽度的一半的负值 */
+}
+.welcome-content .welcome-text-first-line{
+    font-size: 60px;
+    line-height: 72px;
+    height: 72px;
+    margin: 10px;
+}
+.welcome-content .welcome-text-second-line{
+    font-size: 100px;
+    line-height: 100px;
+    height: 100px;
+    margin: 0;
+}
+.welcome-content .welcome-text-third-line{
+    font-size: 20px;
+    line-height: 30px;
+    height: 30px;
+    margin: 10px;
+}
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+
+.slider img.active {
+    opacity: 1;
+}
+.slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%)
+}
+
+/* 页面内容样式 */
+.content {
+    padding: 40px 5%;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.content.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 二维码区域样式 */
+.qr-code-section {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px 5%;
+    background-color: #e9e9f2;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.qr-code-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.qr-code-item {
+    text-align: center;
+}
+
+.qr-code-item img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.qr-code-item p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* 页脚样式 */
+footer {
+    background-color: #1e272e; /* 深科技感颜色 */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+#reveal-effect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 10;
+  /* transition: all 5s; */
+}
+body.loaded #reveal-effect {
+  opacity: 1;
+}
+
+body.revealed #reveal-effect {
+  display: none;
+}
